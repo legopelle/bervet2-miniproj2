@@ -1,6 +1,6 @@
 function motion = algo1(Tf, x0, dt)
 
-steps = floor(Tf/dt);
+steps = ceil(Tf/dt);
 motion = zeros(steps, 2);
 
 motion(1,1) = x0(1);
